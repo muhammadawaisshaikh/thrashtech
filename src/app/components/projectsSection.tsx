@@ -59,6 +59,9 @@ export default function ProjectsSection() {
                     ))}
                 </div>
             </div>
+            <div className="text-center mt-16">
+                <a href="#" className="text-sm font-semibold leading-6 text-gray-900">See All Projects <span aria-hidden="true">→</span></a>
+            </div>
         </div>
     )
 }

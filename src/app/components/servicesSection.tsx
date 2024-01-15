@@ -3,7 +3,7 @@ export default function ServicesSection() {
         <div className="bg-white py-24 sm:py-32">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto max-w-5xl lg:text-center">
-                    <h2 className="text-base font-semibold leading-7 text-indigo-600">Turning your Ideas into Innovations</h2>
+                    <h2 className="text-base font-semibold leading-7 text-gray-500">Turning your Ideas into Innovations</h2>
                     <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Develop your dream concept now!</p>
                     <p className="mt-6 text-lg leading-8 text-gray-600">Thrashtech builds more than websites and apps. we build intelligent futures. We combine the artistry of web and mobile development with the boundless potential of AI to create solutions that learn, adapt, and evolve. Whether it's a user experience that anticipates your needs or an Artificial Intelligence engine that fuels your business growth, we craft experiences that go beyond the screen. </p>
                     <p className="mt-6 text-lg leading-8 text-gray-600">Don't just build apps, build possibilities. Develop your dream concept today and let's co-create the future.</p>
