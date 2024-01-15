@@ -1,9 +1,10 @@
+import Image from "next/image";
 import Shade from "./shade";
 
 export default function AboutSection() {
     return (
         <div className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
-            <img src="https://shorturl.at/wNOQ0" alt="" className="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center" />
+            <Image src="https://shorturl.at/wNOQ0" alt="Image" className="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center" width="500" height="500" />
             <Shade position="top" />
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto max-w-2xl lg:mx-0">

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Header() {
     return (
         <header className="bg-white">
@@ -5,7 +7,7 @@ export default function Header() {
                 <div className="flex lg:flex-1">
                     <a href="#" className="-m-1.5 p-1.5">
                         <span className="sr-only">Thrashtech</span>
-                        <img className="h-8 w-auto" src="https://i.ibb.co/7JNwXdC/t.png" alt="" />
+                        <Image className="h-8 w-auto" src="https://i.ibb.co/7JNwXdC/t.png" alt="Logo" width={100} height={100}/>
                     </a>
                 </div>
                 <div className="flex lg:hidden">
@@ -37,7 +39,7 @@ export default function Header() {
                     <div className="flex items-center justify-between">
                         <a href="#" className="-m-1.5 p-1.5">
                             <span className="sr-only">Your Company</span>
-                            <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="" />
+                            <Image className="h-8 w-auto" src="https://i.ibb.co/7JNwXdC/t.png" alt="Logo" width={100} height={100}/>
                         </a>
                         <button type="button" className="-m-2.5 rounded-md p-2.5 text-gray-700">
                             <span className="sr-only">Close menu</span>
