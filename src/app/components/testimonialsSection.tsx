@@ -3,6 +3,8 @@
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import TestimonialCard from './testimonialCard';
+import { testimonials } from '@/utils/mock-data/testimonials';
+import { Testimonial } from '../types/testimonial';
 
 export default function TestimonialsSection() {
   const responsive = {
@@ -11,18 +13,13 @@ export default function TestimonialsSection() {
     1024: { items: 1 },
   };
 
-  const items = [
-    <TestimonialCard />,
-    <TestimonialCard />,
-    <TestimonialCard />,
-    <TestimonialCard />,
-  ];
+  const data = testimonials.map((t: Testimonial) => <TestimonialCard testimonial={t} />);
 
   return (
     <div className='py-24 sm:py-32'>
       <AliceCarousel 
         mouseTracking 
-        items={items}
+        items={data}
         responsive={responsive}
         controlsStrategy="alternate"
         disableButtonsControls
