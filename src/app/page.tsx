@@ -4,6 +4,7 @@ import AboutSection from './components/aboutSection';
 import ServicesSection from './components/servicesSection';
 import TeamSection from './components/teamSection';
 import ProjectsSection from './components/projectsSection';
+import TestimonialsSection from './components/testimonialsSection';
  
 export const metadata: Metadata = {
   title: 'Thrashtech',
@@ -17,6 +18,7 @@ export default function Home() {
       <ServicesSection />
       <ProjectsSection />
       {/* <TeamSection /> */}
+      <TestimonialsSection />
     </>
   );
 }
