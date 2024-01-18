@@ -26,6 +26,10 @@ export default function TestimonialsSection() {
         responsive={responsive}
         controlsStrategy="alternate"
         disableButtonsControls
+        autoPlay
+        infinite
+        autoPlayInterval={2000}
+        animationDuration={1000}
       />
     </div>
   )
