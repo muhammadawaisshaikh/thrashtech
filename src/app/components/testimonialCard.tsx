@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Testimonial } from "../types/testimonial";
 
 interface TestimonialCardProps {
@@ -11,7 +12,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ testimonial }) => {
             <div className="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center" />
 
             <div className="mx-auto max-w-2xl lg:max-w-6xl">
-                <img className="mx-auto w-20 h-20 rounded-full" src={testimonial.companyLogo} alt="" />
+                <Image className="mx-auto w-20 h-20 rounded-full" src={testimonial.companyLogo} alt="" />
                 <figure className="mt-10">
                     <blockquote className="text-center text-xl font-normal leading-8 text-gray-900 sm:text-2xl sm:leading-9">
                         <p>
@@ -19,7 +20,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ testimonial }) => {
                         </p>
                     </blockquote>
                     <figcaption className="mt-10">
-                        <img
+                        <Image
                             className="mx-auto h-10 w-10 rounded-full"
                             src={testimonial.clientImage}
                             alt=""

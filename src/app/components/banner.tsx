@@ -18,8 +18,8 @@ export default function Banner() {
                         {
                             chips.map((chip) => {
                                 return (
-                                    <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-                                        <div key={chip.id} className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+                                    <div className="hidden sm:mb-8 sm:flex sm:justify-center" key={chip.id}>
+                                        <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
                                             {chip.typo}
                                             <a href="#" className="font-semibold text-dark-600"><span className="absolute inset-0" aria-hidden="true"></span></a>
                                         </div>

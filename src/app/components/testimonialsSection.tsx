@@ -13,7 +13,7 @@ export default function TestimonialsSection() {
     1024: { items: 1 },
   };
 
-  const data = testimonials.map((t: Testimonial) => <TestimonialCard testimonial={t} />);
+  const data = testimonials.map((t: Testimonial) => <TestimonialCard key={t.id} testimonial={t} />);
 
   return (
     <div className='py-24 sm:py-32'>
