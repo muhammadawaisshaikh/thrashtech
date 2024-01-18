@@ -32,5 +32,13 @@ export const testimonials: Testimonial[] = [
         clientImage: "https://media.licdn.com/dms/image/C4D03AQEMLrqOE5yalA/profile-displayphoto-shrink_200_200/0/1517073477181?e=1710979200&v=beta&t=WIJsHi4b3Wml6TItrTZ428h5pdg8DNjaoqqw0gbyLJs",
         clientDesignation: "Co-Founder and COO @UNATION",
         companyName: "George Beardsley"
+    },
+    {
+        id: 5,
+        companyLogo: "https://media.licdn.com/dms/image/C560BAQEzLPfBXqhV-A/company-logo_200_200/0/1679521599116/fletcher_building_logo?e=1713398400&v=beta&t=dHyn_NHtjl5t-Z0DPtVgSIohvs8VmFc7Was4q0um78s",
+        description: "Thrashtech played a crucial role in the development of our renowned Ecommerce Web App for Fletcher Building. Their expertise and dedication were evident throughout the project. With operations spanning manufacturing, distribution, retail, and construction in NZ, Australia, and the South Pacific, Fletcher Building required a robust and tailored solution.",
+        clientImage: "https://media.licdn.com/dms/image/D5603AQFyimiUHFhL4g/profile-displayphoto-shrink_200_200/0/1688600574107?e=1710979200&v=beta&t=VL8qUJh1Z-bo01QadRngIPx4wHKBV-e79rMgvCafK50",
+        clientDesignation: "GM of Ecommerce @Fletcher Building",
+        companyName: "Mark Phillips"
     }
 ]
