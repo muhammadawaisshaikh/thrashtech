@@ -1,33 +1,14 @@
 import Image from "next/image"
+import { ProjectItem } from "../types/projects";
 
-const posts = [
-    {
-        id: 1,
-        title: 'Unation',
-        image: "https://shorturl.at/azERX",
-        href: 'https://www.unation.com',
-        description: 'Dive into a world of vibrant local events, exclusive deals, great attractions and the hottest things to do in our city with UNATION.',
-        category: { title: 'Event Management', href: 'https://www.unation.com/' },
-    },
-    {
-        id: 2,
-        title: 'Noice',
-        image: "https://shorturl.at/mpzU2",
-        href: 'https://open.noice.id/',
-        description: 'Indonesias #1 local audio platform, bringing delightful screenless moments throughout the day. Noice is a multi-vertical audio platform.',
-        category: { title: 'Audio Streaming', href: 'https://open.noice.id/' },
-    },
-    {
-        id: 3,
-        title: 'Jonas Club',
-        image: "https://shorturl.at/dlrHR",
-        href: 'https://jonasclub.com/Main/Home',
-        description: 'The recognized global leader in Club Management Software, worldwide over 2300 clubs in more than 17 different countries with memberships.',
-        category: { title: 'Club Management ERP', href: 'https://jonasclub.com/Main/Home' },
-    },
-]
+interface ProjectProps {
+    projects: ProjectItem[];
+    isOnLanding: boolean
+}
 
-export default function ProjectsSection() {
+const ProjectsSection: React.FC<ProjectProps> = ({ projects, isOnLanding }) => {
+    const posts = projects;
+
     return (
         <div className="bg-white py-24 sm:py-32">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -38,12 +19,12 @@ export default function ProjectsSection() {
                     </p>
                 </div>
                 <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-                    {posts.map((post) => (
+                    {posts.map((post: any) => (
                         <div key={post.id} className="flex max-w-xl flex-col items-start justify-between">
                             <div className="group relative">
-                            <div className="bg-black-500">
-                                <Image className="object-cover hover:object-scale-down h-48 w-96 rounded-lg border border-gray-20" src={post.image} width={500} height={500} alt="Project Image" />
-                            </div>
+                                <div className="bg-black-500">
+                                    <Image className="object-cover hover:object-scale-down h-48 w-96 rounded-lg border border-gray-20" src={post.image} width={500} height={500} alt="Project Image" />
+                                </div>
                                 <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
                                     <a href={post.href}>
                                         <span className="absolute inset-0" />
@@ -61,9 +42,15 @@ export default function ProjectsSection() {
                     ))}
                 </div>
             </div>
-            <div className="text-center mt-16">
-                <a href="#" className="text-sm font-semibold leading-6 text-gray-900">See All Projects <span aria-hidden="true">→</span></a>
-            </div>
+            {
+                isOnLanding && (
+                    <div className="text-center mt-16">
+                        <a href="#" className="text-sm font-semibold leading-6 text-gray-900">See All Projects <span aria-hidden="true">→</span></a>
+                    </div>
+                )
+            }
+
         </div>
     )
 }
+export default ProjectsSection;

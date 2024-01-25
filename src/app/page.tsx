@@ -5,6 +5,8 @@ import ServicesSection from './components/servicesSection';
 import TeamSection from './components/teamSection';
 import ProjectsSection from './components/projectsSection';
 import TestimonialsSection from './components/testimonialsSection';
+
+import { projects } from "@/utils/mock-data/projects"
  
 export const metadata: Metadata = {
   title: 'Thrashtech',
@@ -16,8 +18,7 @@ export default function Home() {
       <Banner />
       <AboutSection />
       <ServicesSection />
-      <ProjectsSection />
-      {/* <TeamSection /> */}
+      <ProjectsSection projects={projects} isOnLanding={true} />
       <TestimonialsSection />
     </>
   );
