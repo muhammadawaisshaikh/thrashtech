@@ -38,7 +38,7 @@ export default function Header() {
                     {
                         pageRoutes.map((p, i) => {
                             return (
-                                <a href={p.path} key={i} className="text-sm font-semibold leading-6 text-gray-900">
+                                <a href={p.path} key={i} className="text-sm font-semibold leading-6 text-gray-900 hover:scale-110 transition ease-in-out delay-150">
                                     {p.title}
                                 </a>
                             );
@@ -46,7 +46,7 @@ export default function Header() {
                     }
                 </Popover.Group>
                 <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-                    <a href="tel:+923312737076" className="text-sm font-semibold leading-6 text-gray-900">
+                    <a href="tel:+923312737076" className="text-sm font-semibold leading-6 text-gray-900 hover:scale-110 transition ease-in-out delay-150">
                         Let's Connect <span aria-hidden="true">&rarr;</span>
                     </a>
                 </div>
