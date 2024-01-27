@@ -18,9 +18,9 @@ const ProjectsSection: React.FC<ProjectProps> = ({ projects, isOnLanding }) => {
                         Let's innovate your business with our experts.
                     </p>
                 </div>
-                <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+                <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-16 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
                     {posts.map((post: ProjectItem) => (
-                        <div key={post.id} className="flex max-w-xl flex-col items-start justify-between">
+                        <div key={post.id} className="flex max-w-xl flex-col items-start justify-between hover:scale-110 transition ease-in-out delay-150">
                             <div className="group relative">
                                 <div className="bg-black-500">
                                     <Image className="object-cover hover:object-scale-down h-48 w-96 rounded-lg border border-gray-20" src={post.image} width={500} height={500} alt="Project Image" />
@@ -34,7 +34,7 @@ const ProjectsSection: React.FC<ProjectProps> = ({ projects, isOnLanding }) => {
                                 <p className="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">{post.description}</p>
                             </div>
                             <div className="flex items-center gap-x-4 text-xs mt-5">
-                                <a href={post.category.href} className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">
+                                <a href={post.category.href} className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100 hover:scale-110 transition ease-in-out delay-150">
                                     {post.category.title}
                                 </a>
                             </div>
