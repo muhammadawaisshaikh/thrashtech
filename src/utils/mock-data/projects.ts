@@ -26,6 +26,14 @@ export const projects: ProjectItem[] = [
         category: { title: 'Club Management ERP', href: 'https://jonasclub.com/Main/Home' },
     },
     {
+        id: 4,
+        title: 'WellSync',
+        image: "https://i.ibb.co/yXWGBTw/wheel-solutions.png",
+        href: 'https://wellsync.com',
+        description: 'WellSync empowers pharmacies, direct to consumer companies, labs, large employers and healthcare innovators to deliver scalable, white-labeled virtual care experiences.',
+        category: { title: 'Healthcare', href: 'https://wellsync.com' },
+    },
+    {
         id: 5,
         title: 'Shipsta',
         image: "https://i.ibb.co/qktRDPQ/1695642094457.jpg",

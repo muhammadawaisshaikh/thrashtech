@@ -16,25 +16,35 @@ export default function Footer() {
                         <Image src={"https://i.ibb.co/SxQDp9Q/logo.png"} alt="Logo" width={300} height={300} />
                     </div>
                     <div className="bg-gray-900 text-gray-800 rounded-lg p-8 relative text-white hover:bg-gray-800 hover:scale-110 transition ease-in-out delay-150">
-                        <i className="fa-solid fa-phone absolute top-12 right-20 text-7xl text-gray-500"></i>
-                        <h5 className="font-extrabold text-lg">
-                            Give us a call
+                        <i className="fa-regular fa-building absolute top-12 right-20 text-7xl text-gray-500"></i>
+                        <h5 className="font-extrabold text-lg flex items-center">
+                            <span className="text-3xl">🇬🇧</span>
+                            <span className="ml-3">Headquarter</span>
                         </h5>
                         <div className="pt-4">
-                            <a href="tel:+923312737076">+923312737076</a>
+                            <a>Cruickshank Road Stratford London</a>
                         </div>
                         <div className="pt-2">
-                            <a href="tel:813-722-1099">+1-813-722-1099</a>
+                            <a href="tel:+442032896440">+442032896440</a>
+                        </div>
+                        <div className="pt-2">
+                            <a href="mailto:thrashtechinfo@gmail.com">thrashtechinfo@gmail.com</a>
                         </div>
                     </div>
                     <div className="bg-gray-900 text-gray-800 rounded-lg p-8 relative text-white hover:bg-gray-800 hover:scale-110 transition ease-in-out delay-150">
-                        <i className="fa-solid fa-envelope absolute top-12 right-20 text-7xl text-gray-500"></i>
-                        <h5 className="font-extrabold text-lg">Send us an email</h5>
+                        <i className="fa-regular fa-building absolute top-12 right-20 text-7xl text-gray-500"></i>
+                        <h5 className="font-extrabold text-lg flex items-center">
+                            <span className="text-3xl">🇺🇸</span>
+                            <span className="ml-3">USA Office</span>
+                        </h5>
                         <div className="pt-4">
-                            <a href="mailto:thrashtechinfo@gmail.com">thrashtechinfo@gmail.com</a>
+                            <a>Franklin St UNIT 1006, Tampa, FL</a>
                         </div>
                         <div className="pt-2">
-                            <a href="mailto:greg@giraphixcreative.com">greg@giraphixcreative.com</a>
+                            <a href="tel:+18134678431">+18134678431</a>
+                        </div>
+                        <div className="pt-2">
+                            <a href="mailto:thrashtechinfo@gmail.com">thrashtechinfo@gmail.com</a>
                         </div>
                     </div>
                 </div>
