@@ -16,7 +16,7 @@ export default function Footer() {
                         <Image src={"https://i.ibb.co/SxQDp9Q/logo.png"} alt="Logo" width={300} height={300} />
                     </div>
                     <div className="bg-gray-900 text-gray-800 rounded-lg p-8 relative text-white hover:bg-gray-800 hover:scale-110 transition ease-in-out delay-150">
-                        <i className="fa-regular fa-building absolute top-12 right-20 text-7xl text-gray-500"></i>
+                        <i className="fa-regular fa-building absolute top-10 right-10 text-5xl text-gray-500"></i>
                         <h5 className="font-extrabold text-lg flex items-center">
                             <span className="text-3xl">🇬🇧</span>
                             <span className="ml-3">Headquarter</span>
@@ -32,7 +32,7 @@ export default function Footer() {
                         </div>
                     </div>
                     <div className="bg-gray-900 text-gray-800 rounded-lg p-8 relative text-white hover:bg-gray-800 hover:scale-110 transition ease-in-out delay-150">
-                        <i className="fa-regular fa-building absolute top-12 right-20 text-7xl text-gray-500"></i>
+                        <i className="fa-regular fa-building absolute top-10 right-10 text-5xl text-gray-500"></i>
                         <h5 className="font-extrabold text-lg flex items-center">
                             <span className="text-3xl">🇺🇸</span>
                             <span className="ml-3">USA Office</span>
