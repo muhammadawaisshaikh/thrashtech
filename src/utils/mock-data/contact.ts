@@ -2,6 +2,7 @@ import { IContact } from "@/app/types/contact";
 
 export const contact: IContact[] = [
     {
+        id: 1,
         flag: '🇬🇧',
         office: 'Headquarter',
         address: 'Cruickshank Road Stratford London',
@@ -9,6 +10,7 @@ export const contact: IContact[] = [
         email: 'thrashtechinfo@gmail.com'
     },
     {
+        id: 2,
         flag: '🇺🇸',
         office: 'USA Office',
         address: 'Franklin St UNIT 1006, Tampa, FL',

@@ -1,4 +1,5 @@
 export interface IContact {
+    id: number
     flag: string
     office: string
     address: string
