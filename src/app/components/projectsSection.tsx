@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { ProjectItem } from "../types/projects";
+import { ProjectItem } from "../../types/projects";
 import Link from "next/link";
 
 interface ProjectProps {

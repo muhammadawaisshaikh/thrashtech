@@ -1,4 +1,4 @@
-import { ITicker } from "@/app/types/ticker";
+import { ITicker } from "@/types/ticker";
 
 export const chips: ITicker[] = [
     { id: 1, typo: "AI is embedded in everything we do." },

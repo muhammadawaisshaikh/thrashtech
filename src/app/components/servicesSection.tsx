@@ -1,4 +1,4 @@
-import { Service, ServiceItem } from "../types/service";
+import { Service, ServiceItem } from "../../types/service";
 
 const data: Service = {
     miniHead: "Turning your Ideas into Innovations",

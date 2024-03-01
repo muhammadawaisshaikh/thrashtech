@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { ITicker } from '../types/ticker';
+import { ITicker } from '../../types/ticker';
 import { chips } from '@/utils/mock-data/tickers';
 
 const tickers: ITicker[] = chips;

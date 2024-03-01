@@ -1,4 +1,4 @@
-import { IContact } from "@/app/types/contact";
+import { IContact } from "@/types/contact";
 
 export const contact: IContact[] = [
     {

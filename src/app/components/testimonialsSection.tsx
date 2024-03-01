@@ -4,7 +4,7 @@ import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import TestimonialCard from './testimonialCard';
 import { testimonials } from '@/utils/mock-data/testimonials';
-import { Testimonial } from '../types/testimonial';
+import { Testimonial } from '../../types/testimonial';
 
 export default function TestimonialsSection() {
   const responsive = {
