@@ -3,6 +3,7 @@ export interface IContact {
     flag: string
     office: string
     address: string
+    mapsLink: string
     phone: string
     email: string
 }
