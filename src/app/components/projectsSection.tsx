@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { ProjectItem } from "../types/projects";
+import Link from "next/link";
 
 interface ProjectProps {
     projects: ProjectItem[];
@@ -45,7 +46,7 @@ const ProjectsSection: React.FC<ProjectProps> = ({ projects, isOnLanding }) => {
             {
                 isOnLanding && (
                     <div className="text-center mt-16">
-                        <a href="#" className="text-sm font-semibold leading-6 text-gray-900">See All Projects <span aria-hidden="true">→</span></a>
+                        <Link href="/projects" className="text-sm font-semibold leading-6 text-gray-900">See All Projects <span aria-hidden="true">→</span></Link>
                     </div>
                 )
             }
