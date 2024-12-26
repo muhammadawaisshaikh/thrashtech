@@ -4,7 +4,7 @@ export const projects: ProjectItem[] = [
     {
         id: 1,
         title: 'Unation',
-        image: "https://shorturl.at/azERX",
+        image: "https://shorturl.at/rVgG8",
         href: 'https://www.unation.com',
         description: 'Dive into a world of vibrant local events, exclusive deals, great attractions and the hottest things to do in our city with UNATION.',
         category: { title: 'Event Management', href: 'https://www.unation.com/' },
@@ -12,7 +12,7 @@ export const projects: ProjectItem[] = [
     {
         id: 2,
         title: 'Noice',
-        image: "https://shorturl.at/mpzU2",
+        image: "https://shorturl.at/KimuN",
         href: 'https://open.noice.id/',
         description: 'Indonesias #1 local audio platform, bringing delightful screenless moments throughout the day. Noice is a multi-vertical audio platform.',
         category: { title: 'Audio Streaming', href: 'https://open.noice.id/' },
