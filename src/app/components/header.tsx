@@ -6,10 +6,10 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import Image from 'next/image';
 
 const pageRoutes: { path: string, title: string }[] = [
-    { path: '/innovations', title: 'Our Innovations' },
     { path: '/projects', title: 'Projects' },
-    { path: '/technologies', title: 'Technologies' },
-    { path: '/what-we-do', title: 'What we do' },
+    // { path: '/innovations', title: 'Our Innovations' },
+    // { path: '/technologies', title: 'Technologies' },
+    // { path: '/what-we-do', title: 'What we do' },
 ]
 
 export default function Header() {
@@ -19,7 +19,7 @@ export default function Header() {
         <header className="absolute w-full h-24 bg-transparent z-10">
             <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
                 <div className="flex lg:flex-1">
-                    <a href="#" className="-m-1.5 p-1.5">
+                    <a href="/" className="-m-1.5 p-1.5">
                         <span className="sr-only">Thrashtech</span>
                         <Image className="h-8 w-auto" src="https://i.ibb.co/7JNwXdC/t.png" alt="Logo" width={100} height={100} />
                     </a>
