@@ -74,10 +74,10 @@ export default function Footer() {
 
       {/* Main footer body */}
       <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
-        <div className="grid grid-cols-1 gap-12 lg:grid-cols-3 lg:gap-8">
+        <div className="grid grid-cols-1 gap-12 lg:grid-cols-4 lg:gap-8">
 
           {/* Brand column */}
-          <div className="flex flex-col gap-6">
+          <div className="flex flex-col gap-6 lg:col-span-1">
             <Image
               src="https://i.ibb.co/SxQDp9Q/logo.png"
               alt="Thrashtech Logo"
@@ -107,7 +107,7 @@ export default function Footer() {
           </div>
 
           {/* Office cards */}
-          <div className="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div className="lg:col-span-3 grid grid-cols-1 sm:grid-cols-3 gap-6">
             {contact.map((c) => (
               <div
                 key={c.id}
