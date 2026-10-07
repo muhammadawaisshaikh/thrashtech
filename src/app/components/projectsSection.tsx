@@ -4,54 +4,84 @@ import Link from "next/link";
 
 interface ProjectProps {
     projects: ProjectItem[];
-    isOnLanding: boolean
+    isOnLanding: boolean;
 }
 
 const ProjectsSection: React.FC<ProjectProps> = ({ projects, isOnLanding }) => {
-    const posts = projects;
+    const posts = isOnLanding ? projects.slice(0, 6) : projects;
 
     return (
-        <div className="bg-white py-24 sm:py-32">
+        <div className="bg-gray-950 py-24 sm:py-32">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                <div className="mx-auto max-w-2xl lg:mx-0">
-                    <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Recent Work.</h2>
-                    <p className="mt-2 text-lg leading-8 text-gray-600">
-                        Let's innovate your business with our experts.
+                {/* Header */}
+                <div className="mx-auto max-w-2xl lg:mx-0 mb-12">
+                    <p className="text-sm font-semibold uppercase tracking-widest text-indigo-400 mb-3">
+                        Our work
+                    </p>
+                    <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                        Recent{' '}
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400">
+                            Work.
+                        </span>
+                    </h2>
+                    <p className="mt-3 text-lg leading-8 text-gray-400">
+                        Let&apos;s innovate your business with our experts.
                     </p>
                 </div>
-                <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-16 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+
+                {/* Grid */}
+                <div className="grid grid-cols-1 gap-6 border-t border-gray-800 pt-10 sm:grid-cols-2 lg:grid-cols-3">
                     {posts.map((post: ProjectItem) => (
-                        <div key={post.id} className="flex max-w-xl flex-col items-start justify-between hover:scale-110 transition ease-in-out delay-150">
-                            <div className="group relative">
-                                <div className="bg-black-500">
-                                    <Image className="object-cover hover:object-scale-down h-48 w-96 rounded-lg border border-gray-20" src={post.image} width={500} height={500} alt="Project Image" />
+                        <div
+                            key={post.id}
+                            className="group relative rounded-2xl p-px bg-gradient-to-br from-gray-800 via-gray-800/50 to-gray-800 hover:from-indigo-500/50 hover:via-purple-500/30 hover:to-indigo-500/50 transition-all duration-300"
+                        >
+                            <div className="rounded-2xl bg-gray-900 overflow-hidden flex flex-col h-full">
+                                {/* Image */}
+                                <div className="relative h-48 overflow-hidden">
+                                    <Image
+                                        className="h-full w-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                        src={post.image}
+                                        width={600}
+                                        height={400}
+                                        alt={post.title}
+                                    />
+                                    <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent" />
                                 </div>
-                                <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-                                    <a href={post.href}>
-                                        <span className="absolute inset-0" />
-                                        {post.title}
-                                    </a>
-                                </h3>
-                                <p className="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">{post.description}</p>
-                            </div>
-                            <div className="flex items-center gap-x-4 text-xs mt-5">
-                                <a href={post.category.href} className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100 hover:scale-110 transition ease-in-out delay-150">
-                                    {post.category.title}
-                                </a>
+
+                                {/* Content */}
+                                <div className="p-6 flex flex-col flex-1 gap-3">
+                                    <span className="inline-flex self-start rounded-full bg-indigo-500/10 border border-indigo-500/20 px-3 py-1 text-xs font-medium text-indigo-400">
+                                        {post.category.title}
+                                    </span>
+                                    <h3 className="text-base font-semibold text-white group-hover:text-indigo-300 transition-colors duration-200">
+                                        <a href={post.href} target="_blank" rel="noopener noreferrer">
+                                            <span className="absolute inset-0" />
+                                            {post.title}
+                                        </a>
+                                    </h3>
+                                    <p className="text-sm leading-6 text-gray-400 line-clamp-3">
+                                        {post.description}
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     ))}
                 </div>
-            </div>
-            {
-                isOnLanding && (
-                    <div className="text-center mt-16">
-                        <Link href="/projects" className="text-sm font-semibold leading-6 text-gray-900">See All Projects <span aria-hidden="true">→</span></Link>
-                    </div>
-                )
-            }
 
+                {/* See all */}
+                {isOnLanding && (
+                    <div className="text-center mt-12">
+                        <Link
+                            href="/projects"
+                            className="inline-flex items-center gap-2 rounded-full border border-gray-700 px-6 py-3 text-sm font-semibold text-gray-300 hover:border-indigo-500 hover:text-white transition-all duration-200"
+                        >
+                            See All Projects <span aria-hidden="true">→</span>
+                        </Link>
+                    </div>
+                )}
+            </div>
         </div>
-    )
+    );
 }
 export default ProjectsSection;
