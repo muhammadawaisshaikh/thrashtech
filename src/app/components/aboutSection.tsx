@@ -40,13 +40,13 @@ export default function AboutSection() {
                 <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
                     <div className="flex flex-wrap gap-6 text-base font-semibold leading-7">
                         <a
-                            href="#"
+                            href="/values"
                             className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400 hover:opacity-80 transition-opacity duration-200"
                         >
                             Our values <span aria-hidden="true">&rarr;</span>
                         </a>
                         <a
-                            href="#"
+                            href="/leadership"
                             className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400 hover:opacity-80 transition-opacity duration-200"
                         >
                             Meet our leadership <span aria-hidden="true">&rarr;</span>

@@ -7,6 +7,8 @@ import Image from 'next/image';
 
 const pageRoutes: { path: string, title: string }[] = [
     { path: '/projects', title: 'Projects' },
+    { path: '/values', title: 'Our Values' },
+    { path: '/leadership', title: 'Leadership' },
 ]
 
 export default function Header() {

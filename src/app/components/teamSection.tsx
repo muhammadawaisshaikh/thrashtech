@@ -1,13 +1,7 @@
 import Image from "next/image";
+import { team } from "@/utils/mock-data/team";
 
 export default function TeamSection() {
-    const team = [
-        { id: 1, name: "Muhammad Awais", designation: "Chief Executive Officer", image: "https://avatars.githubusercontent.com/u/24633059?v=4" },
-        { id: 2, name: "Ilyas Ahmed", designation: "Chief Technology Officer", image: "https://i.ibb.co/N4JSP9r/Screenshot-2026-10-08-at-02-08-07.png" },
-        { id: 3, name: "Muhammad Idrees", designation: "Software Development Manager", image: "https://i.ibb.co/7tH6wCKV/Screenshot-2026-10-08-at-02-08-25.png" },
-        { id: 4, name: "Muhammad Anis", designation: "Team Lead Web Technology", image: "https://i.ibb.co/zWWP0yyd/Screenshot-2026-10-08-at-02-08-37.png" }
-    ]
-
     return (
         <div className="bg-gray-900 py-24 sm:py-32">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
