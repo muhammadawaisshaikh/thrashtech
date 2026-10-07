@@ -4,7 +4,7 @@ export const projects: ProjectItem[] = [
     {
         id: 1,
         title: 'Unation',
-        image: "https://shorturl.at/rVgG8",
+        image: "https://i.ibb.co/8n5gfYjc/h-KJRzf1-STe-S61gg-DGI3z-K9j-N3c.avif",
         href: 'https://www.unation.com',
         description: 'Dive into a world of vibrant local events, exclusive deals, great attractions and the hottest things to do in our city with UNATION.',
         category: { title: 'Event Management', href: 'https://www.unation.com/' },
@@ -12,7 +12,7 @@ export const projects: ProjectItem[] = [
     {
         id: 2,
         title: 'Noice',
-        image: "https://shorturl.at/KimuN",
+        image: "https://image.thum.io/get/width/800/crop/600/https://open.noice.id/",
         href: 'https://open.noice.id/',
         description: 'Indonesias #1 local audio platform, bringing delightful screenless moments throughout the day. Noice is a multi-vertical audio platform.',
         category: { title: 'Audio Streaming', href: 'https://open.noice.id/' },
@@ -20,7 +20,7 @@ export const projects: ProjectItem[] = [
     {
         id: 3,
         title: 'Jonas Club',
-        image: "https://shorturl.at/dlrHR",
+        image: "https://image.thum.io/get/width/800/crop/600/https://jonasclub.com/Main/Home",
         href: 'https://jonasclub.com/Main/Home',
         description: 'The recognized global leader in Club Management Software, worldwide over 2300 clubs in more than 17 different countries with memberships.',
         category: { title: 'Club Management ERP', href: 'https://jonasclub.com/Main/Home' },

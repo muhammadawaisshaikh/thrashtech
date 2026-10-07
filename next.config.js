@@ -1,7 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-        domains: ['shorturl.at', 'i.ibb.co'], // Add other domains as needed
+        domains: [
+            'i.ibb.co',
+            'image.thum.io',
+            'images.unsplash.com',
+            'media.licdn.com',
+            'avatars.githubusercontent.com',
+        ],
     },
 }
 

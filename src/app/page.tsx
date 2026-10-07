@@ -18,6 +18,7 @@ export default function Home() {
       <Banner />
       <AboutSection />
       <ServicesSection />
+      <TeamSection />
       <ProjectsSection projects={projects} isOnLanding={true} />
       <TestimonialsSection />
     </>
